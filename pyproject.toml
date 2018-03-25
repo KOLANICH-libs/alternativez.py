@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.2.0", "wheel", "setuptools_scm[toml]>=3.4.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alternativez"
+authors = [{name = "KOLANICH"}]
+description = "A small library for managing alternative packages"
+readme = "ReadMe.md"
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Environment :: Other Environment",
+	"Intended Audience :: Developers",
+	"License :: Public Domain",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["alternativez"]
+license = {text = "Unlicense"}
+requires-python = ">=3.4"
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/KOLANICH-libs/alternativez.py"
+
+#[project.entry-points."distutils.setup_keywords"]
+#alternativez = "alternativez:setuptoolsHelper"
+
+[tool.setuptools]
+zip-safe = true
+py-modules = ["alternativez"]
+
+[tool.setuptools_scm]
